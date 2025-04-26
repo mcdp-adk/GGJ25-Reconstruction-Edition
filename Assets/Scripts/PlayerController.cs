@@ -1,6 +1,7 @@
 using UnityEngine;
 using UnityEngine.InputSystem;
 using System;
+using UnityEngine.InputSystem.Interactions;
 
 /// <summary>
 /// 角色控制器，处理移动、跳跃和碰撞逻辑
@@ -72,6 +73,8 @@ public class PlayerController : MonoBehaviour
         // 订阅输入事件
         _jumpAction.performed += OnJumpPerformed;
         _jumpAction.canceled += OnJumpCanceled;
+        _interactAction.performed += OnInteractPerformed;
+        _dashAction.performed += OnDashPerformed;
     }
 
     private void OnDisable()
@@ -79,6 +82,8 @@ public class PlayerController : MonoBehaviour
         // 取消订阅输入事件
         _jumpAction.performed -= OnJumpPerformed;
         _jumpAction.canceled -= OnJumpCanceled;
+        _interactAction.performed -= OnInteractPerformed;
+        _dashAction.performed -= OnDashPerformed;
     }
 
     private void Update()
@@ -117,6 +122,7 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// 跳跃按钮按下回调
     /// </summary>
+    /// <param name="context"></param>
     private void OnJumpPerformed(InputAction.CallbackContext context)
     {
         _jumpRequested = true;
@@ -126,11 +132,38 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// 跳跃按钮释放回调
     /// </summary>
+    /// <param name="context"></param>
     private void OnJumpCanceled(InputAction.CallbackContext context)
     {
         // 如果在空中且向上运动，提前结束跳跃
         if (!_grounded && _velocity.y > 0)
             _endedJumpEarly = true;
+    }
+
+    /// <summary>
+    /// 交互按钮触发回调
+    /// </summary>
+    /// <param name="context"></param>
+    private void OnInteractPerformed(InputAction.CallbackContext context)
+    {
+        if (context.interaction is TapInteraction)
+        {
+            // 处理交互逻辑
+            Debug.Log("Interact button pressed!");
+        } else if (context.interaction is HoldInteraction)
+        {
+            // 处理长按交互逻辑
+            Debug.Log("Interact button held!");
+        }
+    }
+
+    /// <summary>
+    /// 冲刺按钮触发回调
+    /// </summary>
+    private void OnDashPerformed(InputAction.CallbackContext context)
+    {
+        // 处理冲刺逻辑
+        Debug.Log("Dash button pressed!");
     }
 
     #endregion
