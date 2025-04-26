@@ -45,9 +45,8 @@ public class PlayerController : MonoBehaviour
     private bool _grounded;
 
     [Header("Wall State")]
-    private bool _touchingWall;
-    private bool _touchingLeftWall;
-    private bool _touchingRightWall;
+
+    private WallTouchState _wallTouchState;
 
     #endregion
 
@@ -150,7 +149,8 @@ public class PlayerController : MonoBehaviour
         {
             // 处理交互逻辑
             Debug.Log("Interact button pressed!");
-        } else if (context.interaction is HoldInteraction)
+        }
+        else if (context.interaction is HoldInteraction)
         {
             // 处理长按交互逻辑
             Debug.Log("Interact button held!");
@@ -242,13 +242,25 @@ public class PlayerController : MonoBehaviour
         }
 
         // 与墙体接触状态更新
-        bool touchingWall = leftWallHit || rightWallHit;
-        if (_touchingWall != touchingWall)
+        WallTouchState newWallTouchState = WallTouchState.None;
+        if (leftWallHit && rightWallHit)
         {
-            _touchingWall = touchingWall;
-            _touchingLeftWall = leftWallHit;
-            _touchingRightWall = rightWallHit;
-            WallTouchChanged?.Invoke(touchingWall, leftWallHit, rightWallHit);
+            // 同时碰到左右墙时，根据移动方向或面向方向决定优先级
+            newWallTouchState = _currentInput.x < 0 || _spriteRenderer.flipX ? WallTouchState.Left : WallTouchState.Right;
+        }
+        else if (leftWallHit)
+        {
+            newWallTouchState = WallTouchState.Left;
+        }
+        else if (rightWallHit)
+        {
+            newWallTouchState = WallTouchState.Right;
+        }
+
+        if (_wallTouchState != newWallTouchState)
+        {
+            _wallTouchState = newWallTouchState;
+            WallTouchChanged?.Invoke(_wallTouchState);
         }
 
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
@@ -371,6 +383,8 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// 当角色接触地面状态改变时触发
     /// </summary>
+    /// <param name="isGrounded">是否接触地面</param>
+    /// <param name="velocityY">当前垂直速度</param>
     public event Action<bool, float> GroundedChanged;
 
     /// <summary>
@@ -381,7 +395,18 @@ public class PlayerController : MonoBehaviour
     /// <summary>
     /// 当角色接触墙体状态改变时触发
     /// </summary>
-    public event Action<bool, bool, bool> WallTouchChanged;
+    /// <param name="state">墙体接触状态</param>
+    public event Action<WallTouchState> WallTouchChanged;
 
     #endregion
+
+    /// <summary>
+    /// 墙体接触状态枚举
+    /// </summary>
+    public enum WallTouchState
+    {
+        None,
+        Left,
+        Right
+    }
 }
