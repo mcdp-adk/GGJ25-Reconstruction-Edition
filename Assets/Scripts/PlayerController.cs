@@ -1,12 +1,11 @@
+using System;
 using UnityEngine;
 using UnityEngine.InputSystem;
-using System;
 using UnityEngine.InputSystem.Interactions;
 
 /// <summary>
 /// 角色控制器，处理移动、跳跃和碰撞逻辑
 /// </summary>
-[RequireComponent(typeof(SpriteRenderer))]
 [RequireComponent(typeof(Rigidbody2D))]
 [RequireComponent(typeof(Collider2D))]
 [RequireComponent(typeof(PlayerInput))]
@@ -16,7 +15,6 @@ public class PlayerController : MonoBehaviour
 
     [Header("References")]
     [SerializeField] private PlayerStats _stats;
-    private SpriteRenderer _spriteRenderer;
     private Rigidbody2D _rigidbody2D;
     private CapsuleCollider2D _collider2D;
     private PlayerInput _playerInput;
@@ -50,11 +48,16 @@ public class PlayerController : MonoBehaviour
 
     #endregion
 
+    #region Properties
+
+    public Vector2 FrameInput { get => _currentInput; }
+
+    #endregion
+
     #region Unity Callbacks
 
     private void Awake()
     {
-        _spriteRenderer = GetComponent<SpriteRenderer>();
         _rigidbody2D = GetComponent<Rigidbody2D>();
         _collider2D = GetComponent<CapsuleCollider2D>();
         _playerInput = GetComponent<PlayerInput>();
@@ -243,12 +246,7 @@ public class PlayerController : MonoBehaviour
 
         // 与墙体接触状态更新
         WallTouchState newWallTouchState = WallTouchState.None;
-        if (leftWallHit && rightWallHit)
-        {
-            // 同时碰到左右墙时，根据移动方向或面向方向决定优先级
-            newWallTouchState = _currentInput.x < 0 || _spriteRenderer.flipX ? WallTouchState.Left : WallTouchState.Right;
-        }
-        else if (leftWallHit)
+        if (leftWallHit)
         {
             newWallTouchState = WallTouchState.Left;
         }
@@ -333,10 +331,6 @@ public class PlayerController : MonoBehaviour
                 _velocity.x,
                 _currentInput.x * _stats.MaxSpeed,
                 _stats.Acceleration * Time.fixedDeltaTime);
-
-            // 根据移动方向翻转精灵
-            if (_currentInput.x != 0)
-                _spriteRenderer.flipX = _currentInput.x < 0;
         }
     }
 
