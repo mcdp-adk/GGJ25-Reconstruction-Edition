@@ -13,6 +13,10 @@ public class PlayerAnimator : MonoBehaviour
     private static readonly int VelocityYKey = Animator.StringToHash("VelosityY");
     private static readonly int JumpKey = Animator.StringToHash("Jump");
     private static readonly int IsGroundedKey = Animator.StringToHash("IsGrounded");
+    private static readonly int OnWallKey = Animator.StringToHash("OnWall");
+
+    [Header("Other Parameters")]
+    private PlayerController.WallTouchState _wallTouchState = PlayerController.WallTouchState.None;
 
     #endregion
 
@@ -55,7 +59,11 @@ public class PlayerAnimator : MonoBehaviour
 
     private void OnWallStateChanged(PlayerController.WallTouchState wallTouchState)
     {
+        // 更新墙壁状态
+        _wallTouchState = wallTouchState;
 
+        // 更新动画参数
+        _animator.SetBool(OnWallKey, _wallTouchState != PlayerController.WallTouchState.None);
     }
 
     private void OnGroundedChanged(bool isGrounded)
@@ -69,12 +77,18 @@ public class PlayerAnimator : MonoBehaviour
     #region Animations
 
     /// <summary>
-    /// 根据移动方向翻转精灵
+    /// 根据移动方向和墙体接触状态翻转精灵
     /// </summary>
     private void HandleSpriteFlipping()
     {
-        // 使用PlayerController中的输入信息控制精灵翻转
-        if (_player.FrameInput.x != 0)
+        // 如果角色正在接触墙体，根据墙体方向翻转
+        if (_wallTouchState != PlayerController.WallTouchState.None)
+        {
+            // 左墙时面向右边（不翻转），右墙时面向左边（翻转）
+            _spriteRenderer.flipX = _wallTouchState == PlayerController.WallTouchState.Right;
+        }
+        // 否则使用常规的输入方向控制翻转
+        else if (_player.FrameInput.x != 0)
         {
             _spriteRenderer.flipX = _player.FrameInput.x < 0;
         }
