@@ -106,20 +106,20 @@ TextureImporter:
       name: CharacterDash_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 2
-        width: 23
-        height: 23
+        x: 0
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 682fbaf2ef2a25140800000000000000
-      internalID: 4707003773160780422
+      spriteID: cc605c9a53a68fb4981a516e41301a14
+      internalID: -1245030728
       vertices: []
       indices: 
       edges: []
@@ -128,20 +128,20 @@ TextureImporter:
       name: CharacterDash_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 1
-        width: 21
-        height: 26
+        x: 31
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 88b2905fc073430a0800000000000000
-      internalID: -6902831800061973624
+      spriteID: f0d2e5e2aa09c024ca501e3569a64752
+      internalID: -1452309325
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: b39cbd7c7b87eb142a0922850435a3b8
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterDash_0: -1245030728
+      CharacterDash_1: -1452309325
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

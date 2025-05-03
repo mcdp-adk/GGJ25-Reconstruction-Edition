@@ -124,20 +124,20 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 23
-        height: 22
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: ef02c9772f10ca8a0800000000000000
-      internalID: -6292652438442991362
+      spriteID: 5d2377b7401862f4c9fe0d93284996ba
+      internalID: 1693770475
       vertices: []
       indices: 
       edges: []
@@ -146,20 +146,20 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_1
       rect:
         serializedVersion: 2
-        x: 42
+        x: 38
         y: 0
-        width: 25
-        height: 24
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 9221b69dd6b56a470800000000000000
-      internalID: 8405506281890845225
+      spriteID: 8467cb033d36ee847ba9fd1325115733
+      internalID: -1887161542
       vertices: []
       indices: 
       edges: []
@@ -168,20 +168,20 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_2
       rect:
         serializedVersion: 2
-        x: 80
-        y: 1
-        width: 25
-        height: 26
+        x: 76
+        y: 0
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dfedbe07d9ee4afd0800000000000000
-      internalID: -2331476347099291907
+      spriteID: b463a4718fbc35a4c90d695b9fcc8dd6
+      internalID: -1341056494
       vertices: []
       indices: 
       edges: []
@@ -190,9 +190,9 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_3
       rect:
         serializedVersion: 2
-        x: 118
+        x: 114
         y: 0
-        width: 25
+        width: 38
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -200,10 +200,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 02b7f57e474bb5c30800000000000000
-      internalID: 4349268279347346208
+      spriteID: eaeede574d7c01f4799388e9ca2a1a29
+      internalID: -802745851
       vertices: []
       indices: 
       edges: []
@@ -212,9 +212,9 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_4
       rect:
         serializedVersion: 2
-        x: 156
+        x: 152
         y: 0
-        width: 25
+        width: 38
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -222,10 +222,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 30c997426756fcc00800000000000000
-      internalID: 923068006726736899
+      spriteID: fc98741900b86d445a425e9780eb399c
+      internalID: 731928082
       vertices: []
       indices: 
       edges: []
@@ -234,20 +234,20 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_5
       rect:
         serializedVersion: 2
-        x: 194
-        y: 3
-        width: 28
-        height: 24
+        x: 190
+        y: 0
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 089e17cd5c8e4ddb0800000000000000
-      internalID: -4767930168973858432
+      spriteID: 76ee54e7c0ca5dd409674d9390e9f38d
+      internalID: 962114838
       vertices: []
       indices: 
       edges: []
@@ -256,20 +256,20 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_6
       rect:
         serializedVersion: 2
-        x: 232
-        y: 2
-        width: 33
-        height: 23
+        x: 228
+        y: 0
+        width: 38
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 32d48de5b2353b5c0800000000000000
-      internalID: -4200922581666607837
+      spriteID: fca0c29c04a247d49ba63e3035c50a39
+      internalID: 2082878357
       vertices: []
       indices: 
       edges: []
@@ -278,9 +278,9 @@ TextureImporter:
       name: CharacterCreateBubbleOutside_7
       rect:
         serializedVersion: 2
-        x: 271
+        x: 266
         y: 0
-        width: 33
+        width: 38
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -288,10 +288,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7bbb9784aeb3af370800000000000000
-      internalID: 8357057935963700151
+      spriteID: 90f3b2fa270dffd47aede23723dff1df
+      internalID: -1339063042
       vertices: []
       indices: 
       edges: []
@@ -300,7 +300,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: f0afcdf99512ed2429853271b1d44080
     internalID: 0
     vertices: []
     indices: 
@@ -309,7 +309,15 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterCreateBubbleOutside_0: 1693770475
+      CharacterCreateBubbleOutside_1: -1887161542
+      CharacterCreateBubbleOutside_2: -1341056494
+      CharacterCreateBubbleOutside_3: -802745851
+      CharacterCreateBubbleOutside_4: 731928082
+      CharacterCreateBubbleOutside_5: 962114838
+      CharacterCreateBubbleOutside_6: 2082878357
+      CharacterCreateBubbleOutside_7: -1339063042
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

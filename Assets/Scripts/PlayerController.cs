@@ -51,6 +51,7 @@ public class PlayerController : MonoBehaviour
     #region Properties
 
     public Vector2 FrameInput { get => _currentInput; }
+    public float VelocityY { get => _velocity.y; }
 
     #endregion
 
@@ -234,14 +235,14 @@ public class PlayerController : MonoBehaviour
             _coyoteUsable = true;
             _bufferedJumpUsable = true;
             _endedJumpEarly = false;
-            GroundedChanged?.Invoke(true, Mathf.Abs(_velocity.y));
+            GroundedChanged?.Invoke(true);
         }
         // 离开地面
         else if (_grounded && !groundHit)
         {
             _grounded = false;
             _frameLeftGrounded = _time;
-            GroundedChanged?.Invoke(false, 0);
+            GroundedChanged?.Invoke(false);
         }
 
         // 与墙体接触状态更新
@@ -258,7 +259,7 @@ public class PlayerController : MonoBehaviour
         if (_wallTouchState != newWallTouchState)
         {
             _wallTouchState = newWallTouchState;
-            WallTouchChanged?.Invoke(_wallTouchState);
+            WallStateChanged?.Invoke(_wallTouchState);
         }
 
         Physics2D.queriesStartInColliders = _cachedQueryStartInColliders;
@@ -378,29 +379,30 @@ public class PlayerController : MonoBehaviour
     /// 当角色接触地面状态改变时触发
     /// </summary>
     /// <param name="isGrounded">是否接触地面</param>
-    /// <param name="velocityY">当前垂直速度</param>
-    public event Action<bool, float> GroundedChanged;
+    public event Action<bool> GroundedChanged;
+
+    /// <summary>
+    /// 当角色接触墙体状态改变时触发
+    /// </summary>
+    /// <param name="wallTouchState">墙体接触状态</param>
+    public event Action<WallTouchState> WallStateChanged;
 
     /// <summary>
     /// 当角色执行跳跃时触发
     /// </summary>
     public event Action Jumped;
 
-    /// <summary>
-    /// 当角色接触墙体状态改变时触发
-    /// </summary>
-    /// <param name="state">墙体接触状态</param>
-    public event Action<WallTouchState> WallTouchChanged;
-
     #endregion
 
-    /// <summary>
-    /// 墙体接触状态枚举
-    /// </summary>
     public enum WallTouchState
     {
         None,
         Left,
         Right
+    }
+
+    public static void test()
+    {
+        Debug.Log("test");
     }
 }

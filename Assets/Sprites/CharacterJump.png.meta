@@ -127,20 +127,20 @@ TextureImporter:
       name: CharacterJump_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 23
-        height: 22
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: e58d1c546736a1100800000000000000
-      internalID: 79485303060027486
+      spriteID: 1dd548d629ba0114c8a57def8e8d0172
+      internalID: 395296619
       vertices: []
       indices: 
       edges: []
@@ -149,20 +149,20 @@ TextureImporter:
       name: CharacterJump_1
       rect:
         serializedVersion: 2
-        x: 30
+        x: 31
         y: 0
-        width: 33
-        height: 13
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 69fd11b292f5c8010800000000000000
-      internalID: 1192432631767228310
+      spriteID: 2a4fe9cc06fbcae428158f9b40f385e1
+      internalID: -971721260
       vertices: []
       indices: 
       edges: []
@@ -171,9 +171,9 @@ TextureImporter:
       name: CharacterJump_2
       rect:
         serializedVersion: 2
-        x: 72
+        x: 62
         y: 0
-        width: 18
+        width: 31
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -181,10 +181,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 99e2eeccc5cb98bd0800000000000000
-      internalID: -2627361800832799079
+      spriteID: f863f448e4616364d83bb3baac61b9e9
+      internalID: -1313165026
       vertices: []
       indices: 
       edges: []
@@ -193,20 +193,20 @@ TextureImporter:
       name: CharacterJump_3
       rect:
         serializedVersion: 2
-        x: 102
-        y: 1
-        width: 17
-        height: 26
+        x: 93
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 54400a7b814edb160800000000000000
-      internalID: 7043036187088389189
+      spriteID: 19f9982b8054ddc40999f85872d45816
+      internalID: -862042774
       vertices: []
       indices: 
       edges: []
@@ -215,20 +215,20 @@ TextureImporter:
       name: CharacterJump_4
       rect:
         serializedVersion: 2
-        x: 129
-        y: 1
-        width: 23
-        height: 26
+        x: 124
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 98fe23029ae483d50800000000000000
-      internalID: 6717205332519743369
+      spriteID: 53d97264a55cdfe4695bd91563c41b6f
+      internalID: 846241171
       vertices: []
       indices: 
       edges: []
@@ -237,20 +237,20 @@ TextureImporter:
       name: CharacterJump_5
       rect:
         serializedVersion: 2
-        x: 164
-        y: 1
-        width: 17
-        height: 26
+        x: 155
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 08259abc728577d00800000000000000
-      internalID: 970341172665471616
+      spriteID: 279b3fa1101214a42944d808c34ce13a
+      internalID: 480257541
       vertices: []
       indices: 
       edges: []
@@ -259,9 +259,9 @@ TextureImporter:
       name: CharacterJump_6
       rect:
         serializedVersion: 2
-        x: 196
+        x: 186
         y: 0
-        width: 18
+        width: 31
         height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
@@ -269,10 +269,10 @@ TextureImporter:
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 6d1457da2eea93e60800000000000000
-      internalID: 7942571706440565206
+      spriteID: 646d09177db6c064784463ec65759f39
+      internalID: 433321932
       vertices: []
       indices: 
       edges: []
@@ -281,20 +281,20 @@ TextureImporter:
       name: CharacterJump_7
       rect:
         serializedVersion: 2
-        x: 216
+        x: 217
         y: 0
-        width: 33
-        height: 13
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: dd47a3d164afbe020800000000000000
-      internalID: 2372264807785723101
+      spriteID: b51b8a40c7d429146a4d3662ccfb950e
+      internalID: -523457311
       vertices: []
       indices: 
       edges: []
@@ -303,20 +303,20 @@ TextureImporter:
       name: CharacterJump_8
       rect:
         serializedVersion: 2
-        x: 253
+        x: 248
         y: 0
-        width: 23
-        height: 22
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 7d7a61472d22978f0800000000000000
-      internalID: -542363992835315753
+      spriteID: dff1c2de0eb0d1b4a91a46d5bf8c7a22
+      internalID: -1979576568
       vertices: []
       indices: 
       edges: []
@@ -325,7 +325,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: d32383612dfeb1a46b64cccead0dbcca
     internalID: 0
     vertices: []
     indices: 
@@ -334,7 +334,16 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterJump_0: 395296619
+      CharacterJump_1: -971721260
+      CharacterJump_2: -1313165026
+      CharacterJump_3: -862042774
+      CharacterJump_4: 846241171
+      CharacterJump_5: 480257541
+      CharacterJump_6: 433321932
+      CharacterJump_7: -523457311
+      CharacterJump_8: -1979576568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

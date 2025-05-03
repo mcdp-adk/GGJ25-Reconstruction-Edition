@@ -103,20 +103,20 @@ TextureImporter:
       name: CharacterOnWall_0
       rect:
         serializedVersion: 2
-        x: 6
-        y: 3
-        width: 23
-        height: 23
+        x: 0
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 89a3b05f00c1afc70800000000000000
-      internalID: 9005541195317459608
+      spriteID: 2e984ff7ce416f04dafe3e5fbf7ec23a
+      internalID: -26596116
       vertices: []
       indices: 
       edges: []
@@ -125,7 +125,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 29781081d49bec74099ad46c9e6f4894
     internalID: 0
     vertices: []
     indices: 
@@ -134,7 +134,8 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterOnWall_0: -26596116
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

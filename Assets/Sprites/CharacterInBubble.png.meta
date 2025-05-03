@@ -106,20 +106,20 @@ TextureImporter:
       name: CharacterInBubble_0
       rect:
         serializedVersion: 2
-        x: 7
-        y: 2
-        width: 23
-        height: 23
+        x: 0
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: 3b8acf60a000ec450800000000000000
-      internalID: 6110821787455236275
+      spriteID: f3a6c5f88cc8bd44b82a03ad090442e3
+      internalID: -1451878604
       vertices: []
       indices: 
       edges: []
@@ -128,20 +128,20 @@ TextureImporter:
       name: CharacterInBubble_1
       rect:
         serializedVersion: 2
-        x: 40
-        y: 1
-        width: 21
-        height: 26
+        x: 31
+        y: 0
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       customData: 
       outline: []
       physicsShape: []
-      tessellationDetail: -1
+      tessellationDetail: 0
       bones: []
-      spriteID: cd124a9a9527695d0800000000000000
-      internalID: -3056129567700540964
+      spriteID: adaeb1cbdb71419478c455e4ff49bbf0
+      internalID: -1421400213
       vertices: []
       indices: 
       edges: []
@@ -150,7 +150,7 @@ TextureImporter:
     customData: 
     physicsShape: []
     bones: []
-    spriteID: 
+    spriteID: 1acd4c3acaa2234479442d19200383dd
     internalID: 0
     vertices: []
     indices: 
@@ -159,7 +159,9 @@ TextureImporter:
     secondaryTextures: []
     spriteCustomMetadata:
       entries: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      CharacterInBubble_0: -1451878604
+      CharacterInBubble_1: -1421400213
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

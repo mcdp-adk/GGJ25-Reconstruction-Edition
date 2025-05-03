@@ -97,8 +97,8 @@ CapsuleCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 0, y: 0.7}
-  m_Size: {x: 0.9, y: 1.4}
+  m_Offset: {x: 0, y: 0.8}
+  m_Size: {x: 0.9, y: 1.1}
   m_Direction: 0
 --- !u!114 &4184170170680861443
 MonoBehaviour:
@@ -188,6 +188,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 1e9d3f2a14cee764fba161ac50a7a961, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  _player: {fileID: -6625697718142467160}
   _spriteRenderer: {fileID: 3971533226195984064}
   _animator: {fileID: 3897879312087690709}
 --- !u!1 &7028670906947666989

@@ -106,10 +106,10 @@ TextureImporter:
       name: CharacterIdle_0
       rect:
         serializedVersion: 2
-        x: 5
+        x: 0
         y: 0
-        width: 23
-        height: 22
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -128,10 +128,10 @@ TextureImporter:
       name: CharacterIdle_1
       rect:
         serializedVersion: 2
-        x: 37
+        x: 31
         y: 0
-        width: 21
-        height: 22
+        width: 31
+        height: 27
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
